@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node scraper-server.mjs",
+    "postinstall": "npx playwright install chromium --with-deps"
+  },
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}
