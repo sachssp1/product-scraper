@@ -337,9 +337,9 @@ function startScrape() {
         document.getElementById('spin').style.display = 'none';
         smsg.textContent = '✓ ' + ev.count + ' product' + (ev.count !== 1 ? 's' : '') + ' found';
         smsg.className = 'done';
-        document.getElementById('dl-btn').style.display = '';
-        document.getElementById('reset-btn').style.display = '';
-        document.getElementById('big-dl-btn').style.display = '';
+        document.getElementById('dl-btn').style.display = 'inline-block';
+        document.getElementById('reset-btn').style.display = 'inline-block';
+        document.getElementById('big-dl-btn').style.display = 'block';
         addLog('✓ Done — ' + ev.count + ' product(s) collected', 'd');
       } else if (ev.type === 'error') {
         es.close();
